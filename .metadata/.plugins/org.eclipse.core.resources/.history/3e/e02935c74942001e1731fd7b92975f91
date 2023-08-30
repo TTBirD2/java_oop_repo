@@ -1,0 +1,6 @@
+package Interfaceoop;
+
+public interface Interface{
+	public double parameter();
+	public double area();
+}

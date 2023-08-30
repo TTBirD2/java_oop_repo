@@ -1,0 +1,86 @@
+package SwingDesigner;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Toolkit;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JSpinner;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+
+public class LoginForm extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtUsername;
+	private JPasswordField txtPassword;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					LoginForm frame = new LoginForm();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public LoginForm() {
+		setBackground(new Color(192, 192, 192));
+		setTitle("Login Form");
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\User\\Pictures\\Screenshots\\Car Rental.png"));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 0));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblUsername = new JLabel("Username");
+		lblUsername.setForeground(new Color(0, 0, 128));
+		lblUsername.setBounds(74, 71, 85, 13);
+		contentPane.add(lblUsername);
+		
+		JLabel lblPassword = new JLabel("Password");
+		lblPassword.setForeground(new Color(0, 0, 128));
+		lblPassword.setBounds(74, 140, 85, 13);
+		contentPane.add(lblPassword);
+		
+		txtUsername = new JTextField();
+		txtUsername.setBounds(193, 68, 96, 19);
+		contentPane.add(txtUsername);
+		txtUsername.setColumns(10);
+		
+		txtPassword = new JPasswordField();
+		txtPassword.setBounds(193, 137, 96, 19);
+		contentPane.add(txtPassword);
+		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.setBackground(new Color(0, 64, 128));
+		btnLogin.setBounds(74, 208, 85, 21);
+		contentPane.add(btnLogin);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.setBackground(new Color(0, 64, 128));
+		btnCancel.setBounds(265, 208, 85, 21);
+		contentPane.add(btnCancel);
+	}
+}

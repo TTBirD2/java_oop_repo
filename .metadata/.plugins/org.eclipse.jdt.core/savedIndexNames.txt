@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\IMU First Year 1st Sem\Programming Java Work Space\.metadata\.plugins\org.eclipse.jdt.core
+2624092045.index
+1865797976.index
+3959137331.index

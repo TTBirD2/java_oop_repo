@@ -1,0 +1,46 @@
+Algorithm
+
+Begin
+
+            Read: hr,min,sec;
+            totalsec: hr*3600+min*60+sec
+            totalmin: totalsec/60
+            Write: totalmin
+
+End
+
+public --> outside the class
+private --> only in class
+protected --> inheritance known as parent and child
+default -->
+
+protected String name;
+protected int age;
+
+void -> no return 
+
+public void display Data
+
+
+Encapsulation
+Inheritance
+Polymorphism
+abstraction
+
+Inheritance
+Superclass/Parent class - Protected
+Subclass/Child class
+(University) Parent class, (Student) Child class
+Student ka University class ko extend loke nai
+
+Single Inheritance - 1 child 1 parent 
+
+Multi Level Inheritance - Grandpa->Father->Son Son,class can extend both father and grandpa class
+
+Hierachical Inheritance - Father -> 2 sons, Both son can extend the father class
+
+Multiple Inheritance - 2 Fathers -> 1 son, Son can extend both father class, Not use in Java
+
+Abstract class - can't create object (Data tway ko yu chin yin extend loke pyy ya ml)
+Interface ko thone chin yin implement lok ya ml
+
